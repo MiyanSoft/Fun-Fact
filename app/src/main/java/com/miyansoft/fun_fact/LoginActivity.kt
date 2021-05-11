@@ -18,14 +18,16 @@ class LoginActivity : AppCompatActivity() {
         loginBtn.setOnClickListener {
             if(email.text.isEmpty()  || password.text.isEmpty()) {
                 Toast.makeText( this,"Email and password required", Toast.LENGTH_LONG).show()
-            } else if(email.text.trim().isNotEmpty()  && password.text.trim().isNotEmpty()) {
-                Toast.makeText( this,"Login Successfully", Toast.LENGTH_LONG).show()
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-
             } else {
-                Toast.makeText( this,"Incorrect Email and Password", Toast.LENGTH_LONG).show()
+                if(email.text.toString() == "ahisublessing@gmail.com"  && password.text.toString() == "miyan1234") {
+                    Toast.makeText( this,"Login Successfully", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
 
+                } else {
+                    Toast.makeText( this,"Incorrect Email and Password", Toast.LENGTH_LONG).show()
+
+                }
             }
 
         }
