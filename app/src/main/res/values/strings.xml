@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fun-Fact</string>
+    <string name="string_email">Enter Email Address</string>
+    <string name="string_password">Enter Password</string>
+    <string name="btn_name">LOGIN</string>
+    <string name="txtLoginHeader">Welcome to Fun-Fact</string>
+</resources>
